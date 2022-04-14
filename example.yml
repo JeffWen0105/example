@@ -1,0 +1,7 @@
+---
+name: example
+hosts: localhost
+tasks:
+  - name: debug
+    debug:
+      msg: "Hello"
