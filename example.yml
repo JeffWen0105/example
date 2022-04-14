@@ -2,6 +2,7 @@
 name: example
 hosts: all
 tasks:
-  - name: debug
-    debug:
-      msg: "Hello"
+  - name: yum install httpd
+    yum:
+      name: httpd
+      state: present
